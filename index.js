@@ -1,3 +1,4 @@
+"use strict";
 var verbose = false
 
 var util = require('util'),
