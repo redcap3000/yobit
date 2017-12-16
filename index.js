@@ -80,7 +80,7 @@ Yobit.prototype.signMessage = function getMessageSignature(params)
     }
     var data = data.join('&')
 
-    hash = crypto.createHmac('sha512', this.secret)
+    var hash = crypto.createHmac('sha512', this.secret)
     hash.update(data)
 
     return(hash.digest('hex'))
